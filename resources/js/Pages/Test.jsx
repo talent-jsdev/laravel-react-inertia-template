@@ -1,18 +1,11 @@
 import React, { useState } from 'react';
 
-const Test = () => {
-    const [index, setIndex] = useState(0);
-
+const Test = (props) => {
     return (
         <div>
-            <h1>Count: {index}</h1>
-            <button
-                onClick={() => {
-                    setIndex(index + 1)
-                }}
-            >
-                Click here
-            </button>
+            <h1>This is a test component.</h1>
+            <p>id: {props.id}</p>
+            <p>Name: {props.name}</p>
         </div>
     )
 }
